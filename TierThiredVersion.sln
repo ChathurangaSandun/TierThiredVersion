@@ -3,8 +3,76 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{7D73C719-1D14-4056-BA8E-CE57AA32A769}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTV.Web", "TTV.Web\TTV.Web.csproj", "{A6B3337C-337E-47BA-A050-957C666C1B99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BussinessServices", "BussinessServices", "{B734F703-824D-47A4-89C9-E13B4DA7FB20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatabaseAccess", "DatabaseAccess", "{3362E4E6-AADA-4DB1-B698-57C7ADCDA432}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infastructure", "Infastructure", "{0B321E4D-4939-425A-9F30-04CE856DCADB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainModal", "DomainModal", "{DFC41458-B54A-47BF-9C41-4B1C960D3A9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A250882B-E338-4BA9-BDB6-CE0D55F6256E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{2C41843E-F82A-488A-B5B9-67FDA46F62A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Localization", "Localization", "{3F2C0608-014B-4723-ACD9-143925E4E544}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTV.BussinessServices.Interfaces", "TTV.BussinessServices.Interfaces\TTV.BussinessServices.Interfaces.csproj", "{8DAB2305-B76B-464A-933C-8D66101D5FA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTV.BussinessServices", "TTV.BussinessServices\TTV.BussinessServices.csproj", "{3E8C5D58-B882-46FE-905A-9B2A15797C0B}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TTV.Database", "TTV.Database\TTV.Database.sqlproj", "{0AED7173-ECCD-407C-AEF2-384522110869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTV.DataAccess.Interfaces", "TTV.DataAccess.Interfaces\TTV.DataAccess.Interfaces.csproj", "{46DA98A5-2F46-40CD-9EAE-FD63B2DE7569}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTV.DataAccess.Repositiries", "TTV.DataAccess.Repositiries\TTV.DataAccess.Repositiries.csproj", "{A1FB5427-3983-4F57-BC00-4F0424E9207D}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6B3337C-337E-47BA-A050-957C666C1B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B3337C-337E-47BA-A050-957C666C1B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B3337C-337E-47BA-A050-957C666C1B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B3337C-337E-47BA-A050-957C666C1B99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DAB2305-B76B-464A-933C-8D66101D5FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DAB2305-B76B-464A-933C-8D66101D5FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DAB2305-B76B-464A-933C-8D66101D5FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DAB2305-B76B-464A-933C-8D66101D5FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E8C5D58-B882-46FE-905A-9B2A15797C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E8C5D58-B882-46FE-905A-9B2A15797C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E8C5D58-B882-46FE-905A-9B2A15797C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E8C5D58-B882-46FE-905A-9B2A15797C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AED7173-ECCD-407C-AEF2-384522110869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AED7173-ECCD-407C-AEF2-384522110869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AED7173-ECCD-407C-AEF2-384522110869}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0AED7173-ECCD-407C-AEF2-384522110869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AED7173-ECCD-407C-AEF2-384522110869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AED7173-ECCD-407C-AEF2-384522110869}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{46DA98A5-2F46-40CD-9EAE-FD63B2DE7569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46DA98A5-2F46-40CD-9EAE-FD63B2DE7569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46DA98A5-2F46-40CD-9EAE-FD63B2DE7569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46DA98A5-2F46-40CD-9EAE-FD63B2DE7569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1FB5427-3983-4F57-BC00-4F0424E9207D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1FB5427-3983-4F57-BC00-4F0424E9207D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1FB5427-3983-4F57-BC00-4F0424E9207D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1FB5427-3983-4F57-BC00-4F0424E9207D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A6B3337C-337E-47BA-A050-957C666C1B99} = {7D73C719-1D14-4056-BA8E-CE57AA32A769}
+		{8DAB2305-B76B-464A-933C-8D66101D5FA0} = {B734F703-824D-47A4-89C9-E13B4DA7FB20}
+		{3E8C5D58-B882-46FE-905A-9B2A15797C0B} = {B734F703-824D-47A4-89C9-E13B4DA7FB20}
+		{0AED7173-ECCD-407C-AEF2-384522110869} = {2C41843E-F82A-488A-B5B9-67FDA46F62A3}
+		{46DA98A5-2F46-40CD-9EAE-FD63B2DE7569} = {3362E4E6-AADA-4DB1-B698-57C7ADCDA432}
+		{A1FB5427-3983-4F57-BC00-4F0424E9207D} = {3362E4E6-AADA-4DB1-B698-57C7ADCDA432}
 	EndGlobalSection
 EndGlobal
